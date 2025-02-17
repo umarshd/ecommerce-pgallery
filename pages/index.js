@@ -223,10 +223,9 @@ export default function Home() {
                     ${selectedProduct.price}
                   </p>
                   <p className="text-yellow-500 text-lg">
-                    ⭐
                     <FontAwesomeIcon
-                      icon="fa-solid fa-star"
-                      style={{ color: "#FFD43B" }}
+                      icon={faStar}
+                      style={{ color: "#FFD43B", marginRight: "2px" }}
                     />
                     {selectedProduct.rating.rate}
                   </p>
