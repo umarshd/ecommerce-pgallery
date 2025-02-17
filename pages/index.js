@@ -269,7 +269,11 @@ export default function Home() {
                   className="absolute top-4 right-4 text-red-500 text-xl"
                   onClick={() => setShowCart(false)}
                 >
-                  ✖
+                  <FontAwesomeIcon
+                    icon={faXmarkCircle}
+                    size="lg"
+                    style={{ color: "red" }}
+                  />
                 </button>
                 <h2 className="text-2xl font-bold text-center mb-4">
                   Your Cart
@@ -299,7 +303,11 @@ export default function Home() {
                           onClick={() => removeFromCart(index)}
                           className="text-red-500"
                         >
-                          ❌
+                          <FontAwesomeIcon
+                            icon={faXmark}
+                            size="lg"
+                            style={{ color: "red" }}
+                          />
                         </button>
                       </div>
                     </div>
